@@ -128,7 +128,7 @@ footer{
 } */
 /* Grid styles */
 .container {
-  max-width: 1140px;
+  max-width: 1245px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -172,4 +172,33 @@ select:-webkit-autofill:focus {
 /* Sticky Footer */
 .footer {
   margin-top: auto; /* sticky footer */
+}
+
+body {
+  background-color: black;
+  font-family: "Inconsolata", monospace;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20.5px 0;
+}
+
+.logo {
+  display: block;
+  max-width: 146px;
+}
+
+.menu__list {
+  display: flex;
+  -moz-column-gap: 64px;
+       column-gap: 64px;
+}
+
+.anchor-link {
+  font-size: 20px;
+  font-weight: bold;
+  color: #f0e3ca;
+  text-transform: capitalize;
 }/*# sourceMappingURL=main.css.map */
