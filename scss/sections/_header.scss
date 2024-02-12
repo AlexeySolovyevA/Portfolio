@@ -4,7 +4,10 @@
 .header__content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20.5px 0;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .logo {
     display: block;
