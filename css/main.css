@@ -177,6 +177,31 @@ select:-webkit-autofill:focus {
 body {
   background-color: black;
   font-family: "Inconsolata", monospace;
+  color: #f0e3ca;
+}
+
+.hero {
+  max-width: 449px;
+}
+
+.main-title {
+  color: #ff00b0;
+  font-size: 64px;
+  font-weight: 900;
+  text-transform: capitalize;
+  margin-bottom: 14px;
+}
+
+.main-subtitle {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 14px;
+}
+
+.hero__description {
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .header__content {
