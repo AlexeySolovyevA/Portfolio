@@ -1,19 +1,12 @@
 .hero {
     max-width: 449px;
+    
+    .main-title,
+    .main-subtitle {
+        margin-bottom: 14px;
+    }
 }
-.main-title {
-    color: $base-color;
-    font-size: 64px;
-    font-weight: 900;
-    text-transform: capitalize;
-    margin-bottom: 14px;
-}
-.main-subtitle {
-    font-size: 40px;
-    font-weight: bold;
-    text-transform: capitalize;
-    margin-bottom: 14px;
-}
+
 .hero__description {
     font-size: 20px;
     font-weight: 400;

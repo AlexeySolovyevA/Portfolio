@@ -1,0 +1,29 @@
+.avatar {
+    position: relative;
+    max-height: 575px;
+    max-width: 629px;
+}
+.avatar__copy-picture {
+    position: absolute;
+    height: 370px;
+    width: 370px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 57% 43% 23% 77% / 57% 42% 58% 43% ;
+    
+}
+.avatar__copy-picture--img {
+    overflow: hidden;
+    z-index: 3;
+}
+.avatar__copy-picture--first {
+    background-color: $copy-first;
+    transform: translate(-50%, -50%) rotate(45deg) ;
+    z-index: 2;
+}
+.avatar__copy-picture--second {
+    background-color: $copy-second;
+    transform: translate(-50%, -50%) rotate(-30deg) ;
+    z-index: 1;
+}

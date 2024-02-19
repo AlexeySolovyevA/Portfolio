@@ -183,25 +183,60 @@ body {
 .hero {
   max-width: 449px;
 }
-
-.main-title {
-  color: #ff00b0;
-  font-size: 64px;
-  font-weight: 900;
-  text-transform: capitalize;
-  margin-bottom: 14px;
-}
-
-.main-subtitle {
-  font-size: 40px;
-  font-weight: bold;
-  text-transform: capitalize;
+.hero .main-title,
+.hero .main-subtitle {
   margin-bottom: 14px;
 }
 
 .hero__description {
   font-size: 20px;
   font-weight: 400;
+}
+
+.main-title {
+  color: #ff00b0;
+  font-size: 64px;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+.main-subtitle {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.avatar {
+  position: relative;
+  max-height: 575px;
+  max-width: 629px;
+}
+
+.avatar__copy-picture {
+  position: absolute;
+  height: 370px;
+  width: 370px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 57% 43% 23% 77%/57% 42% 58% 43%;
+}
+
+.avatar__copy-picture--img {
+  overflow: hidden;
+  z-index: 3;
+}
+
+.avatar__copy-picture--first {
+  background-color: rgba(255, 0, 174, 0.6235294118);
+  transform: translate(-50%, -50%) rotate(45deg);
+  z-index: 2;
+}
+
+.avatar__copy-picture--second {
+  background-color: rgba(240, 227, 202, 0.5764705882);
+  transform: translate(-50%, -50%) rotate(-30deg);
+  z-index: 1;
 }
 
 .header__content {
@@ -229,4 +264,11 @@ body {
   font-weight: bold;
   color: #f0e3ca;
   text-transform: capitalize;
+}
+
+.welcome__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 72.5px 0;
 }/*# sourceMappingURL=main.css.map */
