@@ -208,8 +208,15 @@ body {
 
 .avatar {
   position: relative;
-  max-height: 575px;
+  height: 575px;
   max-width: 629px;
+  width: 100%;
+}
+
+.avatar-bg img {
+  height: auto;
+  -o-object-fit: none;
+     object-fit: none;
 }
 
 .avatar__copy-picture {
