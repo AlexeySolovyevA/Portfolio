@@ -1,0 +1,47 @@
+.skills {
+}
+.skills__content {
+}
+.context-title {
+}
+.list-cards {
+    display: flex;
+    column-gap: 16px;
+    justify-content: center;
+}
+.list-cards__item {
+}
+.card-skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    background-color: $bg-card;
+    padding: 61px 0 58px;
+    border-radius: 10px;
+    row-gap: 16px;
+
+    &--html, &--css {
+        .card-skill__icon {
+            width: 114px;
+            height: 128px;
+        }
+    }
+
+    &--js, &--scss, &--git {
+        .card-skill__icon {
+            width: 128px;
+            height: 128px;
+        }
+    }
+}
+.card-skill__icon {
+    display: inline-block;
+}
+.card-skill__svg {
+}
+.card-skill__title {
+    font-size: 32px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
