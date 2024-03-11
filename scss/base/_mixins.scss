@@ -1,0 +1,17 @@
+@mixin change-color($color){
+    @media(hover:hover){
+        &:hover{
+            color: $color;
+        }
+    }
+}
+@mixin change-icon-color($color){
+    @media(hover:hover){
+        &:hover{
+            .card-skill__svg{
+                fill: $color;
+            }
+            color: $color;
+        }
+    }
+}

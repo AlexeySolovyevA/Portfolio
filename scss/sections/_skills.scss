@@ -34,14 +34,38 @@
             height: 128px;
         }
     }
+
+    &--html {
+        @include change-icon-color($html-icon);
+        // @include change-color($html-text);
+    }
+    &--css {
+        @include change-icon-color($css-icon);
+        // @include change-color($css-text);
+    }
+    &--js {
+        @include change-icon-color($js-icon);
+        // @include change-color($js-text);
+    }
+    &--scss {
+        @include change-icon-color($scss-icon);
+        // @include change-color($scss-text);
+    }
+    &--git {
+        @include change-icon-color($git-icon);
+        // @include change-color($git-text);
+    }
 }
 .card-skill__icon {
     display: inline-block;
 }
 .card-skill__svg {
+    fill: $card-icon-color;
+    transition: fill 0.5s;
 }
 .card-skill__title {
     font-size: 32px;
     font-weight: 400;
     font-family: Arial, Helvetica, sans-serif;
+    transition: color 0.5s;
 }

@@ -272,6 +272,11 @@ body {
   color: #f0e3ca;
   text-transform: capitalize;
 }
+@media (hover: hover) {
+  .anchor-link:hover {
+    color: #ff00b0;
+  }
+}
 
 .welcome__content {
   display: flex;
@@ -324,13 +329,59 @@ body {
   width: 128px;
   height: 128px;
 }
+@media (hover: hover) {
+  .card-skill--html:hover {
+    color: #FC490B;
+  }
+  .card-skill--html:hover .card-skill__svg {
+    fill: #FC490B;
+  }
+}
+@media (hover: hover) {
+  .card-skill--css:hover {
+    color: #2196F4;
+  }
+  .card-skill--css:hover .card-skill__svg {
+    fill: #2196F4;
+  }
+}
+@media (hover: hover) {
+  .card-skill--js:hover {
+    color: #FFDF00;
+  }
+  .card-skill--js:hover .card-skill__svg {
+    fill: #FFDF00;
+  }
+}
+@media (hover: hover) {
+  .card-skill--scss:hover {
+    color: #CA669B;
+  }
+  .card-skill--scss:hover .card-skill__svg {
+    fill: #CA669B;
+  }
+}
+@media (hover: hover) {
+  .card-skill--git:hover {
+    color: #F25234;
+  }
+  .card-skill--git:hover .card-skill__svg {
+    fill: #F25234;
+  }
+}
 
 .card-skill__icon {
   display: inline-block;
+}
+
+.card-skill__svg {
+  fill: #f0e3ca;
+  transition: fill 0.5s;
 }
 
 .card-skill__title {
   font-size: 32px;
   font-weight: 400;
   font-family: Arial, Helvetica, sans-serif;
+  transition: color 0.5s;
 }/*# sourceMappingURL=main.css.map */

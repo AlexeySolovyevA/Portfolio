@@ -1,7 +1,8 @@
 // base
-@import './base/vars';
 @import './base/reset';
+@import './base/vars';
 @import './base/base';
+@import './base/mixins';
 
 // blocks
 @import './blocks/hero';
