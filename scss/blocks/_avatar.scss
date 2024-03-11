@@ -4,9 +4,10 @@
     max-width: 629px;
     width: 100%;
 }
-.avatar-bg img{
+.avatar__bg-picture{
     height: auto;
-    object-fit: none;
+    width: auto;
+    object-fit: contain;
 }
 .avatar__copy-picture {
     position: absolute;

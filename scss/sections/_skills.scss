@@ -1,8 +1,11 @@
 .skills {
+    padding: 64px 0;
 }
 .skills__content {
-}
-.context-title {
+    .context-title {
+        text-align: center;
+        margin-bottom: 32px;
+    }
 }
 .list-cards {
     display: flex;
@@ -66,6 +69,6 @@
 .card-skill__title {
     font-size: 32px;
     font-weight: 400;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arial Narrow', Arial, sans-serif;
     transition: color 0.5s;
 }

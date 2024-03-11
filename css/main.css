@@ -206,6 +206,13 @@ body {
   text-transform: capitalize;
 }
 
+.context-title {
+  color: #ff00b0;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
 .avatar {
   position: relative;
   height: 575px;
@@ -213,10 +220,11 @@ body {
   width: 100%;
 }
 
-.avatar-bg img {
+.avatar__bg-picture {
   height: auto;
-  -o-object-fit: none;
-     object-fit: none;
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .avatar__copy-picture {
@@ -282,7 +290,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 72.5px 0;
+  padding: 78px 0 72.5px;
 }
 
 .aboute-me__content {
@@ -302,6 +310,15 @@ body {
 .about-me__text {
   font-size: 24px;
   max-width: 904px;
+}
+
+.skills {
+  padding: 64px 0;
+}
+
+.skills__content .context-title {
+  text-align: center;
+  margin-bottom: 32px;
 }
 
 .list-cards {
@@ -382,6 +399,6 @@ body {
 .card-skill__title {
   font-size: 32px;
   font-weight: 400;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial Narrow", Arial, sans-serif;
   transition: color 0.5s;
 }/*# sourceMappingURL=main.css.map */
