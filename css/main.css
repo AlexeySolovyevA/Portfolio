@@ -401,4 +401,25 @@ body {
   font-weight: 400;
   font-family: "Arial Narrow", Arial, sans-serif;
   transition: color 0.5s;
+}
+
+.projects {
+  padding: 64px 0;
+}
+
+.projects__content .context-title {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.list-projects {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+
+.project-card {
+  height: 320px;
+  width: 320px;
 }/*# sourceMappingURL=main.css.map */

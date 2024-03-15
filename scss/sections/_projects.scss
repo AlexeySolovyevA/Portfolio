@@ -1,0 +1,23 @@
+.projects {
+    padding: 64px 0;
+}
+.container {
+}
+.projects__content {
+    .context-title {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+}
+
+.list-projects {
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+}
+.list-projects__item {
+}
+.project-card {
+    height: 320px;
+    width: 320px;
+}
