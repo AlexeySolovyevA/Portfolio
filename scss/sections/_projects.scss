@@ -21,3 +21,40 @@
     height: 320px;
     width: 320px;
 }
+.project-card__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(33, 32, 29, 0.98);
+    padding: 40.5px 0;
+}
+.project-card__info-top {
+    width: 200px;
+    text-align: center;
+    padding-bottom: 16px;
+    border-bottom: 1px solid $base-color;
+    
+    .context-title {
+        margin-bottom: 16px;
+    }
+}
+.project-card__info-stack {
+}
+.project-card__info-bottom {
+    max-width: 219px;
+    padding-top: 16px;
+}
+.project-card__info-description {
+    margin-bottom: 16px;
+}
+.other-page-wrapper {
+    text-align: center;
+    
+}
+.other-page {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: $bg-card;
+    border-radius: 4px;
+    color: $text-color;
+}
