@@ -420,8 +420,13 @@ body {
 }
 
 .project-card {
+  position: relative;
   height: 320px;
   width: 320px;
+  overflow: hidden;
+}
+.project-card:hover .project-card__info {
+  transform: translateY(100%);
 }
 
 .project-card__info {
@@ -429,7 +434,11 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: rgba(33, 32, 29, 0.98);
-  padding: 40.5px 0;
+  padding: 39.5px 0;
+  position: absolute;
+  width: 100%;
+  top: -100%;
+  transition: 0.5s;
 }
 
 .project-card__info-top {
@@ -461,4 +470,5 @@ body {
   background-color: #1f1e1b;
   border-radius: 4px;
   color: #f0e3ca;
+  font-size: 14px;
 }/*# sourceMappingURL=main.css.map */
