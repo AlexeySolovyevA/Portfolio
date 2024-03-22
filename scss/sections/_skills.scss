@@ -1,0 +1,74 @@
+.skills {
+    padding: 64px 0;
+}
+.skills__content {
+    .context-title {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+}
+.list-cards {
+    display: flex;
+    column-gap: 16px;
+    justify-content: center;
+}
+.list-cards__item {
+}
+.card-skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    background-color: $bg-card;
+    padding: 61px 0 58px;
+    border-radius: 10px;
+    row-gap: 16px;
+
+    &--html, &--css {
+        .card-skill__icon {
+            width: 114px;
+            height: 128px;
+        }
+    }
+
+    &--js, &--scss, &--git {
+        .card-skill__icon {
+            width: 128px;
+            height: 128px;
+        }
+    }
+
+    &--html {
+        @include change-icon-color($html-icon);
+        // @include change-color($html-text);
+    }
+    &--css {
+        @include change-icon-color($css-icon);
+        // @include change-color($css-text);
+    }
+    &--js {
+        @include change-icon-color($js-icon);
+        // @include change-color($js-text);
+    }
+    &--scss {
+        @include change-icon-color($scss-icon);
+        // @include change-color($scss-text);
+    }
+    &--git {
+        @include change-icon-color($git-icon);
+        // @include change-color($git-text);
+    }
+}
+.card-skill__icon {
+    display: inline-block;
+}
+.card-skill__svg {
+    fill: $card-icon-color;
+    transition: fill 0.5s;
+}
+.card-skill__title {
+    font-size: 32px;
+    font-weight: 400;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    transition: color 0.5s;
+}
