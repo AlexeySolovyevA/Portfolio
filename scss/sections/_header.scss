@@ -7,10 +7,15 @@
     padding: 20.5px 0;
     max-width: 1200px;
     margin: 0 auto;
-    
+
     .logo {
         display: block;
         max-width: 146px;
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        row-gap: 21.7px;
     }
 }
 .menu {

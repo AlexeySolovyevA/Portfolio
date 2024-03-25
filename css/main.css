@@ -266,6 +266,12 @@ body {
   display: block;
   max-width: 146px;
 }
+@media (max-width: 768px) {
+  .header__content {
+    flex-direction: column;
+    row-gap: 21.7px;
+  }
+}
 
 .menu__list {
   display: flex;
