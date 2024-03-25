@@ -297,6 +297,13 @@ body {
   justify-content: space-between;
   padding: 78px 0 72.5px;
 }
+@media (max-width: 1150px) {
+  .welcome__content {
+    flex-direction: column;
+    row-gap: 64px;
+    padding: 128px 0;
+  }
+}
 
 .footer {
   padding: 64px 0;

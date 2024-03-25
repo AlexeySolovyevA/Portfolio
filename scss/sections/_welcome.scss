@@ -3,4 +3,10 @@
     align-items: center;
     justify-content: space-between;
     padding: 78px 0 72.5px;
+
+    @media (max-width: 1150px) {
+        flex-direction: column;
+        row-gap: 64px;
+        padding: 128px 0;
+    }
 }
