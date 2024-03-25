@@ -262,8 +262,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
-
-.logo {
+.header__content .logo {
   display: block;
   max-width: 146px;
 }
@@ -291,6 +290,57 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 78px 0 72.5px;
+}
+
+.footer {
+  padding: 64px 0;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 64px;
+       column-gap: 64px;
+}
+.footer__content .logo {
+  display: block;
+  max-width: 165px;
+  margin-bottom: 19.7px;
+}
+.footer__content .context-title {
+  margin-bottom: 16px;
+}
+
+.invite-description {
+  width: 213px;
+  font-size: 20px;
+}
+
+.contacts-list {
+  display: flex;
+  -moz-column-gap: 48px;
+       column-gap: 48px;
+}
+
+.contacts-list__sublist-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.contact-link {
+  display: flex;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  align-items: center;
+  color: #ff00b0;
+}
+
+.contact-link__icon {
+  height: 32px;
+  width: 32px;
+}
+
+.contact-link__title {
+  font-size: 24px;
 }
 
 .aboute-me__content {

@@ -1,0 +1,56 @@
+.footer {
+    padding: 64px 0;
+}
+.footer__content {
+    display: flex;
+    justify-content: center;
+    column-gap: 64px;
+
+    .logo {
+        display: block;
+        max-width: 165px;
+        margin-bottom: 19.7px;
+    }
+    .context-title {
+        margin-bottom: 16px;
+    }
+}
+.invite-description {
+    width: 213px;
+    font-size: 20px;
+}
+.logo {
+}
+.invite-description__text{
+}
+.contacts {
+}
+
+.contacts-list {
+    display: flex;
+    column-gap: 48px;
+}
+.contacts-list__item {
+}
+.contacts-list__sublist {
+}
+.contacts-list__sublist-item {
+    &:not(:last-child){
+        margin-bottom: 32px;
+    }
+}
+.contact-link {
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+    color: $base-color;
+
+    
+}
+.contact-link__icon {
+    height: 32px;
+    width: 32px;
+}
+.contact-link__title {
+    font-size: 24px;
+}
