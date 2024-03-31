@@ -254,6 +254,18 @@ body {
   z-index: 1;
 }
 
+.burger {
+  display: none;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+}
+@media (max-width: 580px) {
+  .burger {
+    display: block;
+  }
+}
+
 .header__content {
   display: flex;
   justify-content: space-between;
@@ -270,6 +282,17 @@ body {
   .header__content {
     flex-direction: column;
     row-gap: 21.7px;
+  }
+}
+@media (max-width: 580px) {
+  .header__content {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 580px) {
+  .menu {
+    display: none;
   }
 }
 

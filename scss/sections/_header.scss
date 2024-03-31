@@ -17,8 +17,15 @@
         flex-direction: column;
         row-gap: 21.7px;
     }
+
+    @media (max-width: 580px) {
+        flex-direction: row;
+    }
 }
 .menu {
+    @media (max-width: 580px) {
+        display: none;
+    }
 }
 .menu__list {
     display: flex;
