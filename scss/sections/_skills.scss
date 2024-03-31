@@ -9,8 +9,9 @@
 }
 .list-cards {
     display: flex;
-    column-gap: 16px;
+    gap: 16px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .list-cards__item {
 }

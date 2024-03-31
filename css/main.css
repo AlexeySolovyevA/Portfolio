@@ -312,21 +312,39 @@ body {
 .footer__content {
   display: flex;
   justify-content: center;
-  -moz-column-gap: 64px;
-       column-gap: 64px;
+  gap: 64px;
 }
 .footer__content .logo {
   display: block;
   max-width: 165px;
   margin-bottom: 19.7px;
 }
+@media (max-width: 768px) {
+  .footer__content .logo {
+    margin: 0 auto 19.7px;
+  }
+}
 .footer__content .context-title {
   margin-bottom: 16px;
 }
+@media (max-width: 768px) {
+  .footer__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__content .context-title {
+    text-align: center;
+  }
+}
 
 .invite-description {
-  width: 213px;
+  max-width: 213px;
   font-size: 20px;
+}
+@media (max-width: 768px) {
+  .invite-description {
+    max-width: 339px;
+  }
 }
 
 .contacts-list {
@@ -364,6 +382,11 @@ body {
        column-gap: 32px;
   padding: 64px 0;
 }
+@media (max-width: 768px) {
+  .aboute-me__content {
+    flex-wrap: wrap;
+  }
+}
 
 .about-me__img {
   height: 100px;
@@ -386,9 +409,9 @@ body {
 
 .list-cards {
   display: flex;
-  -moz-column-gap: 16px;
-       column-gap: 16px;
+  gap: 16px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card-skill {
@@ -478,8 +501,8 @@ body {
 .list-projects {
   display: flex;
   justify-content: center;
-  -moz-column-gap: 16px;
-       column-gap: 16px;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
 .project-card {
