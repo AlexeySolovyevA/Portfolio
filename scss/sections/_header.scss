@@ -24,12 +24,25 @@
 }
 .menu {
     @media (max-width: 580px) {
-        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: $bg-header;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(-100%);
     }
 }
 .menu__list {
     display: flex;
-    column-gap: 64px;
+    gap: 64px;
+    @media (max-width: 768px) {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 .menu__item {
 }
