@@ -256,14 +256,35 @@ body {
 
 .burger {
   display: none;
-  width: 50px;
-  height: 50px;
-  background-color: #fff;
+  width: 48px;
+  height: 48px;
 }
 @media (max-width: 580px) {
   .burger {
     display: block;
   }
+}
+.burger__line {
+  display: block;
+  width: 36px;
+  height: 4px;
+  background-color: #f0e3ca;
+  position: relative;
+  margin: 0 auto;
+}
+.burger__line::before, .burger__line::after {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 4px;
+  background-color: #f0e3ca;
+  position: absolute;
+}
+.burger__line::before {
+  top: -10px;
+}
+.burger__line::after {
+  top: 10px;
 }
 
 .header__content {
@@ -309,7 +330,7 @@ body {
   display: flex;
   gap: 64px;
 }
-@media (max-width: 768px) {
+@media (max-width: 580px) {
   .menu__list {
     flex-direction: column;
     text-align: center;

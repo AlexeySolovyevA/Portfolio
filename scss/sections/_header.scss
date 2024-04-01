@@ -39,7 +39,7 @@
 .menu__list {
     display: flex;
     gap: 64px;
-    @media (max-width: 768px) {
+    @media (max-width: 580px) {
         flex-direction: column;
         text-align: center;
     }
