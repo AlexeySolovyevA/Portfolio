@@ -3,11 +3,8 @@
     height: 575px;
     max-width: 629px;
     width: 100%;
-}
-.avatar__bg-picture{
-    height: auto;
-    width: auto;
-    object-fit: contain;
+    background-image: url(../../img/pictures/bg-avatar-desk.png);
+    background-repeat: no-repeat;
 }
 .avatar__copy-picture {
     position: absolute;
