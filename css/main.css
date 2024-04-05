@@ -529,6 +529,12 @@ body {
   justify-content: center;
   flex-wrap: wrap;
 }
+@media (max-width: 668px) {
+  .list-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 .card-skill {
   display: flex;
@@ -538,15 +544,34 @@ body {
   background-color: #1f1e1b;
   padding: 61px 0 58px;
   border-radius: 10px;
-  row-gap: 16px;
+  gap: 16px;
+}
+@media (max-width: 668px) {
+  .card-skill {
+    flex-direction: row;
+    padding: 14px 32px;
+    width: 285px;
+  }
 }
 .card-skill--html .card-skill__icon, .card-skill--css .card-skill__icon {
   width: 114px;
   height: 128px;
 }
+@media (max-width: 668px) {
+  .card-skill--html .card-skill__icon, .card-skill--css .card-skill__icon {
+    width: 28px;
+    height: 32px;
+  }
+}
 .card-skill--js .card-skill__icon, .card-skill--scss .card-skill__icon, .card-skill--git .card-skill__icon {
   width: 128px;
   height: 128px;
+}
+@media (max-width: 668px) {
+  .card-skill--js .card-skill__icon, .card-skill--scss .card-skill__icon, .card-skill--git .card-skill__icon {
+    width: 32px;
+    height: 32px;
+  }
 }
 @media (hover: hover) {
   .card-skill--html:hover {
@@ -603,6 +628,12 @@ body {
   font-weight: 400;
   font-family: "Arial Narrow", Arial, sans-serif;
   transition: color 0.5s;
+}
+@media (max-width: 668px) {
+  .card-skill__title {
+    font-size: 24px;
+    font-weight: 500;
+  }
 }
 
 .projects {
