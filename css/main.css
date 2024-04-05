@@ -185,12 +185,29 @@ body {
 }
 .hero .main-title,
 .hero .main-subtitle {
-  margin-bottom: 14px;
+  margin-bottom: 16px;
+}
+@media (max-width: 443px) {
+  .hero .main-title,
+  .hero .main-subtitle {
+    text-align: center;
+  }
 }
 
 .hero__description {
   font-size: 20px;
   font-weight: 400;
+}
+@media (max-width: 660px) {
+  .hero__description {
+    font-size: 24px;
+  }
+}
+@media (max-width: 443px) {
+  .hero__description {
+    font-size: 18px;
+    text-align: center;
+  }
 }
 
 .main-title {
@@ -199,11 +216,31 @@ body {
   font-weight: 900;
   text-transform: capitalize;
 }
+@media (max-width: 660px) {
+  .main-title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 443px) {
+  .main-title {
+    font-size: 32px;
+  }
+}
 
 .main-subtitle {
   font-size: 40px;
   font-weight: bold;
   text-transform: capitalize;
+}
+@media (max-width: 660px) {
+  .main-subtitle {
+    font-size: 32px;
+  }
+}
+@media (max-width: 443px) {
+  .main-subtitle {
+    font-size: 24px;
+  }
 }
 
 .context-title {
@@ -221,6 +258,20 @@ body {
   background-image: url(../../img/pictures/bg-avatar-desk.png);
   background-repeat: no-repeat;
 }
+@media (max-width: 660px) {
+  .avatar {
+    background-image: url(../../img/pictures/bg-mobile.png);
+    width: 413px;
+    height: 430px;
+  }
+}
+@media (max-width: 443px) {
+  .avatar {
+    width: 290px;
+    height: 307px;
+    background-size: contain;
+  }
+}
 
 .avatar__copy-picture {
   position: absolute;
@@ -230,6 +281,12 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
   border-radius: 57% 43% 23% 77%/57% 42% 58% 43%;
+}
+@media (max-width: 443px) {
+  .avatar__copy-picture {
+    width: 230px;
+    height: 230px;
+  }
 }
 
 .avatar__copy-picture--img {

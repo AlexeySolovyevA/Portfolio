@@ -1,13 +1,27 @@
 .hero {
     max-width: 449px;
-    
+
     .main-title,
     .main-subtitle {
-        margin-bottom: 14px;
+        margin-bottom: 16px;
+
+        @media (max-width: 443px) {
+            text-align: center;
+        }
     }
+
 }
 
 .hero__description {
     font-size: 20px;
     font-weight: 400;
+
+    @media (max-width: 660px) {
+        font-size: 24px;
+    }
+
+    @media (max-width: 443px) {
+        font-size: 18px;
+        text-align: center;
+    }
 }

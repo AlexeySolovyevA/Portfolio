@@ -5,6 +5,18 @@
     width: 100%;
     background-image: url(../../img/pictures/bg-avatar-desk.png);
     background-repeat: no-repeat;
+
+    @media (max-width: 660px) {
+        background-image: url(../../img/pictures/bg-mobile.png);
+        width: 413px;
+        height: 430px;
+    }
+
+    @media (max-width: 443px) {
+        width: 290px;
+        height: 307px;
+        background-size: contain;
+    }
 }
 .avatar__copy-picture {
     position: absolute;
@@ -14,7 +26,11 @@
     top: 50%;
     transform: translate(-50%, -50%);
     border-radius: 57% 43% 23% 77% / 57% 42% 58% 43% ;
-    
+
+    @media (max-width: 443px) {
+        width: 230px;
+        height: 230px;
+    }
 }
 .avatar__copy-picture--img {
     overflow: hidden;
