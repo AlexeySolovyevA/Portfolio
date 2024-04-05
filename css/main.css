@@ -508,6 +508,11 @@ body {
   font-size: 24px;
   max-width: 904px;
 }
+@media (max-width: 443px) {
+  .about-me__text {
+    font-size: 18px;
+  }
+}
 
 .skills {
   padding: 64px 0;
