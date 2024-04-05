@@ -5,6 +5,7 @@
     width: 100%;
     background-image: url(../../img/pictures/bg-avatar-desk.png);
     background-repeat: no-repeat;
+    overflow: hidden;
 
     @media (max-width: 660px) {
         background-image: url(../../img/pictures/bg-mobile.png);
