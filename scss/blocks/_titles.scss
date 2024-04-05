@@ -3,11 +3,27 @@
     font-size: 64px;
     font-weight: 900;
     text-transform: capitalize;
+
+    @media (max-width: 660px) {
+        font-size: 40px;
+    }
+
+    @media (max-width: 443px) {
+        font-size: 32px;
+    }
 }
 .main-subtitle {
     font-size: 40px;
     font-weight: bold;
     text-transform: capitalize;
+
+    @media (max-width: 660px) {
+        font-size: 32px;
+    }
+
+    @media (max-width: 443px) {
+        font-size: 24px;
+    }
 }
 .context-title{
     color: $base-color;
