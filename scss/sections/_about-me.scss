@@ -10,6 +10,10 @@
     @media (max-width: 768px) {
         flex-wrap: wrap;
     }
+
+    @media (max-width: 425px) {
+        padding: 32px 0 64px;
+    }
 }
 .about-me__img {
     height: 100px;

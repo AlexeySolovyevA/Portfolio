@@ -415,6 +415,11 @@ body {
     padding: 128px 0;
   }
 }
+@media (max-width: 425px) {
+  .welcome__content {
+    padding: 120px 0 32px;
+  }
+}
 
 .footer {
   padding: 64px 0;
@@ -460,8 +465,13 @@ body {
 
 .contacts-list {
   display: flex;
-  -moz-column-gap: 48px;
-       column-gap: 48px;
+  gap: 48px;
+}
+@media (max-width: 425px) {
+  .contacts-list {
+    flex-direction: column;
+    gap: 32px;
+  }
 }
 
 .contacts-list__sublist-item:not(:last-child) {
@@ -496,6 +506,11 @@ body {
 @media (max-width: 768px) {
   .aboute-me__content {
     flex-wrap: wrap;
+  }
+}
+@media (max-width: 425px) {
+  .aboute-me__content {
+    padding: 32px 0 64px;
   }
 }
 
@@ -661,6 +676,12 @@ body {
 .project-card:hover .project-card__info {
   transform: translateY(100%);
 }
+@media (max-width: 375px) {
+  .project-card {
+    width: 290px;
+    height: 290px;
+  }
+}
 
 .project-card__info {
   display: flex;
@@ -672,6 +693,11 @@ body {
   width: 100%;
   top: -100%;
   transition: 0.5s;
+}
+@media (max-width: 375px) {
+  .project-card__info {
+    padding: 24.5px 0;
+  }
 }
 
 .project-card__info-top {
