@@ -9,4 +9,8 @@
         row-gap: 64px;
         padding: 128px 0;
     }
+
+    @media (max-width: 425px) {
+        padding: 120px 0 32px;
+    }
 }
