@@ -42,6 +42,11 @@
         align-items: center;
         justify-content: center;
         transform: translateY(-100%);
+        transition: 0.5s;
+
+        &.open {
+            transform: translateY(0);
+        }
     }
 }
 .menu__list {
