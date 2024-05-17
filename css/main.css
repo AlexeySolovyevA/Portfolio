@@ -388,6 +388,10 @@ body {
     align-items: center;
     justify-content: center;
     transform: translateY(-100%);
+    transition: 0.5s;
+  }
+  .menu.open {
+    transform: translateY(0);
   }
 }
 
