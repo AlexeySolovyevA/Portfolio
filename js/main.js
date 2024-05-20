@@ -1,14 +1,13 @@
 const burger = document.querySelector('#burger');
 const menu = document.querySelector('#menu');
-const anchorLinks = document.querySelectorAll('.anchor-link');
 
 burger.addEventListener('click' , () => {
     menu.classList.toggle('open');
 });
 
-// Переписать код на Event родителя
-anchorLinks.forEach(link => {
-    link.addEventListener('click' , () => {
+menu.addEventListener('click' , (event) => {
+    if (event.target.closest('.anchor-link')) {
         menu.classList.remove('open');
-    })
+    }
 });
+// 1. Анимация бургера
