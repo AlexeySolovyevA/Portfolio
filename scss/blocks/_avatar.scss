@@ -3,12 +3,12 @@
     height: 575px;
     max-width: 629px;
     width: 100%;
-    background-image: url(../../img/pictures/bg-avatar-desk.png);
+    background-image: url(../img/pictures/bg-avatar-desk.png);
     background-repeat: no-repeat;
     overflow: hidden;
 
     @media (max-width: 660px) {
-        background-image: url(../../img/pictures/bg-mobile.png);
+        background-image: url(../img/pictures/bg-mobile.png);
         width: 413px;
         height: 430px;
     }
