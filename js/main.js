@@ -6,7 +6,7 @@ burger.addEventListener('click' , () => {
 });
 
 menu.addEventListener('click' , (event) => {
-    if (event.target.closest('.anchor-link')) {
+    if (event.target.closest('[data-anchor-link]')) {
         menu.classList.remove('open');
     }
 });
