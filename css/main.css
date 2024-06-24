@@ -784,6 +784,12 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  transition: transform 0.3s;
+}
+@media (hover: hover) {
+  .slider__arrow:hover {
+    transform: translateY(-50%) scale(110%);
+  }
 }
 
 .slider__arrow-prev {
@@ -797,6 +803,7 @@ body {
 .slider__track {
   display: flex;
   gap: 10px;
+  transition: transform 0.3s;
 }
 
 .slider__slide {
@@ -822,4 +829,14 @@ body {
   width: 13px;
   background-color: #f0e3ca;
   border-radius: 4px;
+  transition: transform 0.3s;
+}
+@media (hover: hover) {
+  .slider__controll-btn:hover {
+    transform: scaleX(150%);
+  }
+}
+.slider__controll-btn.btn-active {
+  transform: scaleX(150%);
+  background-color: #ff00b0;
 }/*# sourceMappingURL=main.css.map */

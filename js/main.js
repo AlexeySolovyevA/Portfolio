@@ -12,4 +12,3 @@ menu.addEventListener('click' , (event) => {
         burger.classList.remove('active');
     }
 });
-

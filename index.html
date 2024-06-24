@@ -10,6 +10,7 @@
       <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700;900&display=swap" rel="stylesheet">
       <link rel="icon" href="./img/favicon/favicon.svg" type="image/x-icon">
       <script src="./js/main.js" defer="defer"></script>
+      <script src="./js/slider.js" defer="defer"></script>
    </head>
    <body>
       <!-- svg-sprites -->
@@ -299,23 +300,23 @@
                   <h6 class="context-title">
                      reviews
                   </h6>
-                  <div class="slider">
-                     <button class="slider__arrow slider__arrow-prev">
+                  <div class="slider" id="slider">
+                     <button data-arrow="left" class="slider__arrow slider__arrow-prev">
                         <svg class="slider__arrow-icon">
                            <use xlink:href="#arrowPrev"></use>
                         </svg>
                      </button>
                      <div class="slider__content">
-                        <div class="slider__track">
-                           <div class="slider__slide"></div>
-                           <div class="slider__slide"></div>
-                           <div class="slider__slide"></div>
-                           <div class="slider__slide"></div>
-                           <div class="slider__slide"></div>
-                           <div class="slider__slide"></div>
+                        <div class="slider__track" data-slider-track>
+                           <div class="slider__slide" data-slide></div>
+                           <div class="slider__slide" data-slide></div>
+                           <div class="slider__slide" data-slide></div>
+                           <div class="slider__slide" data-slide></div>
+                           <div class="slider__slide" data-slide></div>
+                           <div class="slider__slide" data-slide></div>
                         </div>
                      </div>
-                     <button class="slider__arrow slider__arrow-next">
+                     <button data-arrow="right" class="slider__arrow slider__arrow-next">
                         <svg class="slider__arrow-icon">
                            <use xlink:href="#arrowNext"></use>
                         </svg>
