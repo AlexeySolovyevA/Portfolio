@@ -5,6 +5,9 @@ const controlButtons = Array.from(slider.querySelectorAll('[data-control]'));
 const currentSliderGap = getComputedStyle(sliderTrack).columnGap;
 const currentSlideWidth = slides[0].offsetWidth;
 const sliderMovement = currentSlideWidth + parseFloat(currentSliderGap);
+const minMove = 20;
+let startPoint = 0;
+let endPoint = 0;
 let counterSlides = 0;
 
 const motion = () => {
@@ -48,4 +51,28 @@ const handlerEvents = (event) => {
     motion();
 }
 
+const handlerStartAction = (event) => {
+    startPoint = event.clientX;
+}
+
+const handlerEndAction = (event) => {
+    endPoint = event.clientX;
+    calculateDiffrentCoordinates();
+}
+
+const calculateDiffrentCoordinates = () => {
+    const currentDiff = startPoint - endPoint;
+    if (Math.abs(currentDiff) > minMove) {
+        if (currentDiff > 0) {
+            chooseDirection('right');
+        }
+        else {
+            chooseDirection('left');
+        }
+    }
+    motion();
+}
+
 slider.addEventListener('click' , handlerEvents);
+sliderTrack.addEventListener('mousedown' , handlerStartAction);
+sliderTrack.addEventListener('mouseup' , handlerEndAction);
