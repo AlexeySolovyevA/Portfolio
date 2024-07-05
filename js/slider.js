@@ -9,6 +9,7 @@ let counterSlides = 0;
 
 const motion = () => {
     sliderTrack.style.transform = `translateX(-${sliderMovement * counterSlides}px)`;
+    toggleStyleButtons(counterSlides);
 }
 
 const chooseDirection = (direction) => {
@@ -18,6 +19,14 @@ const chooseDirection = (direction) => {
     else if (direction === 'left') {
         counterSlides = (counterSlides > 0) ? counterSlides -= 1 : slides.length - 1;
     }
+}
+
+const toggleStyleButtons = (indexCurrentButton) => {
+    const isActiveBtn = slider.querySelector('button.btn-active');
+    if (isActiveBtn) {
+        isActiveBtn.classList.remove('btn-active');
+    }
+    controlButtons[indexCurrentButton].classList.add('btn-active');
 }
 
 const handlerEvents = (event) => {
