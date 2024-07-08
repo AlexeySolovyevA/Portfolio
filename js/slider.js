@@ -52,11 +52,11 @@ const handlerEvents = (event) => {
 }
 
 const handlerStartAction = (event) => {
-    startPoint = event.clientX;
+    startPoint = event.type.includes('mouse') ? event.clientX : event.touches[0].clientX;
 }
 
 const handlerEndAction = (event) => {
-    endPoint = event.clientX;
+    endPoint = event.type.includes('mouse') ? event.clientX : event.changedTouches[0].clientX;
     calculateDiffrentCoordinates();
 }
 
@@ -76,3 +76,5 @@ const calculateDiffrentCoordinates = () => {
 slider.addEventListener('click' , handlerEvents);
 sliderTrack.addEventListener('mousedown' , handlerStartAction);
 sliderTrack.addEventListener('mouseup' , handlerEndAction);
+sliderTrack.addEventListener('touchstart', handlerStartAction);
+sliderTrack.addEventListener('touchend' , handlerEndAction);

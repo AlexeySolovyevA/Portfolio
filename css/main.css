@@ -810,6 +810,9 @@ body {
   height: 300px;
   min-width: 100%;
   background-color: aqua;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .slider__arrow-next {
