@@ -9,6 +9,7 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700;900&display=swap" rel="stylesheet">
       <link rel="icon" href="./img/favicon/favicon.svg" type="image/x-icon">
+      <script src="./js/main.js" defer="defer"></script>
    </head>
    <body>
       <!-- svg-sprites -->
@@ -66,30 +67,33 @@
                <a href="" class="logo">
                   <img src="./img/icons/logo.svg" alt="logo">
                </a>
-               <nav class="menu">
+               <nav class="menu" id="menu">
                   <ul class="menu__list">
                      <li class="menu__item">
-                        <a href="" class="anchor-link">
+                        <a href="#about-me" class="anchor-link" data-anchor-link>
                            about me
                         </a>
                      </li>
                      <li class="menu__item">
-                        <a href="" class="anchor-link">
+                        <a href="#skills" class="anchor-link" data-anchor-link>
                            skills
                         </a>
                      </li>
                      <li class="menu__item">
-                        <a href="" class="anchor-link">
-                           pet-projects
+                        <a href="#projects" class="anchor-link" data-anchor-link>
+                           projects
                         </a>
                      </li>
                      <li class="menu__item">
-                        <a href="" class="anchor-link">
+                        <a href="#contacts" class="anchor-link" data-anchor-link>
                            contacts
                         </a>
                      </li>
                   </ul>
                </nav>
+               <button class="burger" id="burger">
+                  <span class="burger__line"></span>
+               </button>
             </div>
          </div>
       </header>
@@ -103,9 +107,6 @@
                      <p class="hero__description">Frontend developer looking for ideas and projects for himself and others</p>
                   </div>
                   <div class="avatar">
-                     <picture class="avatar-bg">
-                        <img class="avatar__bg-picture" src="./img/pictures/bg-avatar-desk.png" alt="bg-avatar"/>
-                     </picture>
                      <div class="avatar__copy-picture avatar__copy-picture--img">
                         <img src="./img/pictures/dog.jpg" alt="">
                      </div>
@@ -119,7 +120,7 @@
                </div>
             </div>
          </section>
-         <section class="about-me">
+         <section class="about-me" id="about-me">
             <div class="container">
                <div class="aboute-me__content">
                   <img src="./img/icons/about-logo.svg" alt="" class="about-me__img">
@@ -129,7 +130,7 @@
                </div>
             </div>
          </section>
-         <section class="skills">
+         <section class="skills" id="skills">
             <div class="container">
                <div class="skills__content">
                   <h6 class="context-title">
@@ -200,7 +201,7 @@
                </div>
             </div>
          </section>
-         <section class="projects">
+         <section class="projects" id="projects">
             <div class="container">
                <div class="projects__content">
                   <h6 class="context-title">
@@ -281,7 +282,7 @@
             </div>
          </section>
       </main>
-      <footer class="footer">
+      <footer class="footer" id="contacts">
          <div class="container">
             <div class="footer__content">
                <div class="invite-description">

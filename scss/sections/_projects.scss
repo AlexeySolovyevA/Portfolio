@@ -11,7 +11,8 @@
 .list-projects {
     display: flex;
     justify-content: center;
-    column-gap: 16px;
+    gap: 16px;
+    flex-wrap: wrap;
 }
 .list-projects__item {
 }
@@ -26,6 +27,11 @@
             transform: translateY(100%);
         }
     }
+
+    @media (max-width: 375px) {
+        width: 290px;
+        height: 290px;
+    }
 }
 .project-card__info {
     display: flex;
@@ -37,13 +43,17 @@
     width: 100%;
     top: -100%;
     transition: 0.5s;
+
+    @media (max-width: 375px) {
+        padding: 24.5px 0;
+    }
 }
 .project-card__info-top {
     width: 200px;
     text-align: center;
     padding-bottom: 16px;
     border-bottom: 1px solid $base-color;
-    
+
     .context-title {
         margin-bottom: 16px;
     }
@@ -59,7 +69,6 @@
 }
 .other-page-wrapper {
     text-align: center;
-    
 }
 .other-page {
     display: inline-block;

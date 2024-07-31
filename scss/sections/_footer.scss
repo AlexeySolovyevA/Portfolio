@@ -4,20 +4,38 @@
 .footer__content {
     display: flex;
     justify-content: center;
-    column-gap: 64px;
+    gap: 64px;
 
     .logo {
         display: block;
         max-width: 165px;
         margin-bottom: 19.7px;
+
+        @media (max-width: 768px) {
+            margin: 0 auto 19.7px;
+        }
     }
+
     .context-title {
         margin-bottom: 16px;
     }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+
+        .context-title {
+            text-align: center;
+        }
+    }
 }
 .invite-description {
-    width: 213px;
+    max-width: 213px;
     font-size: 20px;
+
+    @media (max-width: 768px) {
+        max-width: 339px;
+    }
 }
 .logo {
 }
@@ -25,10 +43,14 @@
 }
 .contacts {
 }
-
 .contacts-list {
     display: flex;
-    column-gap: 48px;
+    gap: 48px;
+
+    @media (max-width: 425px) {
+        flex-direction: column;
+        gap: 32px;
+    }
 }
 .contacts-list__item {
 }
@@ -44,8 +66,6 @@
     column-gap: 16px;
     align-items: center;
     color: $base-color;
-
-    
 }
 .contact-link__icon {
     height: 32px;
