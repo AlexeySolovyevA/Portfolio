@@ -525,6 +525,11 @@ body {
 .contact-link__title {
   font-size: 24px;
 }
+@media (max-width: 425px) {
+  .contact-link__title {
+    font-size: 18px;
+  }
+}
 
 .aboute-me__content {
   display: flex;

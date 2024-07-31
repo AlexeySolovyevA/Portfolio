@@ -73,4 +73,8 @@
 }
 .contact-link__title {
     font-size: 24px;
+
+    @media (max-width: 425px) {
+        font-size: 18px;
+    }
 }
