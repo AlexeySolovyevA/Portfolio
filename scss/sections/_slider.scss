@@ -25,6 +25,9 @@
             transform: translateY(-50%) scale(110%);
         }
     }
+    @media (max-width: 768px) {
+        display: none;
+    }
 }
 .slider__arrow-prev {
     left: -70px;
@@ -42,6 +45,7 @@
     min-width: 100%;
     background-color: aqua;
     user-select: none;
+    border-radius: 10px;
 }
 .slider__arrow-next {
     right: -70px;

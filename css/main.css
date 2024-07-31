@@ -791,6 +791,11 @@ body {
     transform: translateY(-50%) scale(110%);
   }
 }
+@media (max-width: 768px) {
+  .slider__arrow {
+    display: none;
+  }
+}
 
 .slider__arrow-prev {
   left: -70px;
@@ -813,6 +818,7 @@ body {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  border-radius: 10px;
 }
 
 .slider__arrow-next {
